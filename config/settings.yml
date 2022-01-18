@@ -1,0 +1,4 @@
+plugins:
+  author_selection_username:
+    type: 'username'
+    default: ''

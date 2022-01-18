@@ -1,0 +1,45 @@
+.author-selector {
+  display: flex;
+}
+
+.author-selector-wrapper {
+  margin-bottom: 10px;
+}
+
+.like-user-menu {
+  position: absolute;
+  background-color: $secondary;
+  padding: 5px 12px;
+  box-shadow: shadow('dropdown');
+  border-top: 1px solid $primary-very-low;
+  z-index: 999;
+
+  ul {
+    list-style: none;
+    margin: 0;
+
+    li {
+      margin: 5px 0;
+
+      .like-user {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $primary;
+
+        .d-icon {
+          margin-right: 7px;
+        }
+
+        .d-icon-heart {
+          color: $love;
+        }
+      }
+    }
+  }
+}
+
+.control-group.author-selection {
+  margin-top: 1.25em;
+}

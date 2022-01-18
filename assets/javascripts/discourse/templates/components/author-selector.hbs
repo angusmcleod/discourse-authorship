@@ -1,0 +1,9 @@
+{{combo-box
+  onChange=(action "updateAuthor")
+  placeholderKey="composer.select_author"
+  tabindex="1"
+  value=composer.user.username
+  content=authorList
+  disabled=updatingAuthor}}
+
+{{conditional-loading-spinner condition=changingUser size="small"}}

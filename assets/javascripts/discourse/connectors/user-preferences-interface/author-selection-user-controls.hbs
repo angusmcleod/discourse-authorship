@@ -1,0 +1,15 @@
+{{#if model.author_selection_enabled}}
+  <div class="control-group author-selection">
+    <label class="control-label">
+      {{i18n "user_preferences.author_selection"}}
+    </label>
+    <div class="controls">
+      {{user-selector 
+        id="author-list"
+        placeholder=(i18n "user_preferences.author_selection_list")
+        tabindex="1"
+        usernames=model.custom_fields.author_list
+        autocomplete="discourse"}}
+    </div>
+  </div>
+{{/if}}

@@ -1,0 +1,7 @@
+en:
+  js:
+    composer:
+      select_author: "Select an author..."
+    user_preferences:
+      author_selection: "Author Selection"
+      author_selection_list: "Select authors..."
