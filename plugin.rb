@@ -4,7 +4,7 @@
 # about: Authorship Plugin for Discourse
 # version: 0.1.0
 # author: Angus McLeod
-# url: https://github.com/paviliondev/discourse-authorship
+# url: https://github.com/angusmcleod/discourse-authorship
 
 register_asset 'stylesheets/common/common.scss'
 
