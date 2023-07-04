@@ -42,7 +42,6 @@ after_initialize do
   add_to_class(:guardian, :can_delete_post_action?) do |post_action|
     return true if @user.author_selected && @user.respond_to?(:author_selected)
     return false unless is_my_own?(post_action) && !post_action.is_private_message?
-    return true if post_action.is_bookmark?
     post_action.created_at > SiteSetting.post_undo_action_window_mins.minutes.ago
   end
 
